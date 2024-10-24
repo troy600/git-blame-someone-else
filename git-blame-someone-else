@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ $# -ne 2 ]; then
-  >&2 echo "Usage: $0 <author> <commit>"
+  >&2 echo "Usage(please no): $0 <author> <commit>"
   exit 1
 fi
 
@@ -16,4 +16,4 @@ COMMIT=$(git rev-parse --short $2)
   git rebase --continue
 } &> /dev/null
 
-echo "$AUTHOR_NAME is now the author of $COMMIT. You're officially an asshole.";
+echo "$AUTHOR_NAME is now the author of $COMMIT. You're officially an asshole...";
